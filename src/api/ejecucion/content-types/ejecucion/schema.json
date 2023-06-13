@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ejecuciones",
+  "info": {
+    "singularName": "ejecucion",
+    "pluralName": "ejecuciones",
+    "displayName": "Ejecucion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    }
+  }
+}

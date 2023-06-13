@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_tiempo_periodos",
+  "info": {
+    "displayName": "Periodo",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "inicio": {
+      "type": "integer"
+    },
+    "fin": {
+      "type": "integer"
+    }
+  }
+}

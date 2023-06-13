@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "responsables",
+  "info": {
+    "singularName": "responsable",
+    "pluralName": "responsables",
+    "displayName": "Responsable"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "cargo": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "celular": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ministerios",
+  "info": {
+    "singularName": "ministerio",
+    "pluralName": "ministerios",
+    "displayName": "Ministerio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "siglas": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "institucions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::institucion.institucion",
+      "mappedBy": "ministerio"
+    }
+  }
+}

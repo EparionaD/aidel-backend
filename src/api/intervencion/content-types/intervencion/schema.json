@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "intervenciones",
+  "info": {
+    "singularName": "intervencion",
+    "pluralName": "intervenciones",
+    "displayName": "Intervencion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "cui": {
+      "type": "string"
+    },
+    "presupuesto": {
+      "type": "float"
+    },
+    "actividad": {
+      "type": "richtext"
+    },
+    "beneficiarios": {
+      "type": "richtext"
+    },
+    "zona": {
+      "type": "richtext"
+    },
+    "ejecucion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ejecucion.ejecucion"
+    },
+    "coordenadas": {
+      "type": "component",
+      "repeatable": false,
+      "component": "coorde1.coorde"
+    },
+    "periodo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tiempo.periodo"
+    },
+    "tipo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tipo.tipo"
+    }
+  }
+}

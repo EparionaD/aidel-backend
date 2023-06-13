@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_coorde1_coordes",
+  "info": {
+    "displayName": "coordenada",
+    "icon": "pinMap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "x": {
+      "type": "string"
+    },
+    "y": {
+      "type": "string"
+    }
+  }
+}

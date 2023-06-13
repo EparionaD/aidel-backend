@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instituciones",
+  "info": {
+    "singularName": "institucion",
+    "pluralName": "instituciones",
+    "displayName": "Institucion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "siglas": {
+      "type": "string"
+    },
+    "representante": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "cargo": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "celular": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "ministerio": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ministerio.ministerio",
+      "inversedBy": "institucions"
+    },
+    "responsable": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::responsable.responsable"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
