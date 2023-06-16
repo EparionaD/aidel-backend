@@ -2,15 +2,16 @@
   "collectionName": "components_tiempo_periodos",
   "info": {
     "displayName": "Periodo",
-    "icon": "layer"
+    "icon": "layer",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "inicio": {
-      "type": "integer"
+      "type": "string"
     },
     "fin": {
-      "type": "integer"
+      "type": "string"
     }
   }
 }

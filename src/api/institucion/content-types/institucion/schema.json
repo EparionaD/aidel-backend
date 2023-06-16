@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "nombre": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "siglas": {
       "type": "string"
@@ -40,7 +41,7 @@
     "email": {
       "type": "email"
     },
-    "ministerio": {
+    "categoria": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::ministerio.ministerio",
